@@ -3,6 +3,12 @@ const data = $.parseJSON($.ajax({
   url: 'https://api.jikan.moe/v3/character/246',
   dataType: "json",
   async: false
+}).done(() => {
+  console.log("Character details loaded");
+}).fail((response) => {
+  // Show response status and message instead of character name on fail
+  $('#name').append(`${response.responseJSON.status}: ${response.responseJSON.message}`);
+  console.log(response.responseJSON);
 }).responseText);
 
 // Fetch gallery images
@@ -23,25 +29,19 @@ const details = {
   image_url:data.image_url
 };
 
-// Insert main image as profile picture
+// Insert profile image and details
 $('#profile-img').prepend(`<img src=${details.image_url}>`);
 $('#name').prepend(`${details.name}`);
-$('#post-count').prepend(`${pictures.length}`);
-$('#follower-count').prepend(`${details.followers}`);
-$('#following-count').prepend(`${details.following}`);
+$('#post-count').empty().prepend(`${pictures.length}`);
+$('#follower-count').empty().prepend(`${details.followers}`);
+$('#following-count').empty().prepend(`${details.following}`);
 
+// Insert first 6 lines of 'about' property as bio
 for (let i=0; i<6; i++) {
   $('#detail-list').append(`<li>${details.about[i]}</li>`);
 }
 
+//Insert each picture in the gallery
 $.each(pictures, (index, value) => {
-  // console.log(index);
-  // console.log(value);
   $('.gallery').append(`<div class="wrapper"><img src=${value.large}></div>`)
 });
-
-
-
-
-console.log(details);
-// console.log(pictures);
