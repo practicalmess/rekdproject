@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
@@ -21,7 +21,9 @@ header input {
   height: 2em;
   border-radius: 5px;
   border: 2px solid #f4f4f4;
+  color: #f4f4f4;
   background-color: #fafafa;
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif, FontAwesome;
 }
 
 main {
@@ -44,8 +46,22 @@ main {
 .profile img {
   margin: -10px;
 }
+.profile h2 {
+  font-weight: normal;
+}
 .profile .info {
   margin: 3.3333333333%;
+  flex-grow: 2;
+}
+.profile .info .stats {
+  font-size: 0.9em;
+  display: flex;
+}
+.profile .info .stat-item {
+  padding-right: 10%;
+}
+.profile .info .stat-data {
+  font-weight: bold;
 }
 .profile .info ul {
   list-style-type: none;

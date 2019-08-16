@@ -2,23 +2,31 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Rekd Profile Page Mockup Challenge</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
     <header>
       <img alt="Rekd logo" src="rekd-logo-light-red-sm.png" />
-      <input type="text" placeholder="Search">
+      <input type="text" placeholder="&#xf002; Search">
     </header>
     <main>
       <section class="profile">
         <div id="profile-img"></div>
         <div class="info">
-          <span id="name"></span>
+          <h2 id="name"></h2>
           <div class="stats">
-            <span id="post-count"> posts</span>
-            <span id="follower-count"> followers</span>
-            <span id="following-count"> following</span>
+            <div class="stat-item">
+              <span class="stat-data" id="post-count"></span><span> posts</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-data" id="follower-count"></span><span> followers</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-data" id="following-count"></span><span> following</span>
+            </div>
           </div>
           <div id="bio">
             <ul id="detail-list">

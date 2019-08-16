@@ -1,12 +1,13 @@
 //Variables
 $bg-main: #fafafa;
+$accent: #f4f4f4;
 $column: percentage(1/30);
 $column-2: 2 * $column;
 $column-6: 6 * $column;
 $column-8: 8 * $column;
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Noto Sans", Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
@@ -30,14 +31,16 @@ header {
     position: absolute;
     height: 2em;
     border-radius: 5px;
-    border: 2px solid #f4f4f4;
-    background-color: #fafafa;
+    border: 2px solid $accent;
+    color: $accent;
+    background-color: $bg-main;
+    font-family: "Noto Sans", Helvetica, Arial, sans-serif, FontAwesome;
   }
 }
 
 main {
   background-color: $bg-main;
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid $accent;
   padding: $column;
 }
 
@@ -54,8 +57,22 @@ main {
   img {
     margin: -10px;
   }
+  h2 {
+    font-weight: normal;
+  }
   .info {
     margin: $column;
+    flex-grow: 2;
+    .stats {
+      font-size: .9em;
+      display: flex;
+    }
+    .stat-item {
+      padding-right: 10%;
+    }
+    .stat-data {
+      font-weight: bold;
+    }
     ul {
       list-style-type: none;
       padding: 0;
