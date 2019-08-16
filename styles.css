@@ -35,16 +35,21 @@ main {
 }
 .profile #profile-img {
   width: 200px;
+  min-width: 200px;
   height: 200px;
   overflow: hidden;
   border-radius: 50%;
-  margin: 0 3.3333333333%;
+  margin: 0 6.6666666667%;
 }
 .profile img {
   margin: -10px;
 }
 .profile .info {
   margin: 3.3333333333%;
+}
+.profile .info ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
