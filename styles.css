@@ -7,7 +7,7 @@ header {
   display: flex;
   height: 2em;
   width: 100%;
-  margin: 2em 0;
+  margin: 2em 3.3333333333%;
 }
 header img {
   height: 2em;
@@ -15,6 +15,7 @@ header img {
 }
 header input {
   width: 20%;
+  text-align: center;
   margin: 0 40%;
   position: fixed;
   height: 2em;
@@ -26,14 +27,24 @@ header input {
 main {
   background-color: #fafafa;
   border-top: 1px solid #f4f4f4;
+  padding: 3.3333333333%;
 }
 
 .profile {
   display: flex;
 }
+.profile #profile-img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 3.3333333333%;
+}
 .profile img {
-  width: 100px;
-  height: 100px;
+  margin: -10px;
+}
+.profile .info {
+  margin: 3.3333333333%;
 }
 
 /*# sourceMappingURL=styles.css.map */
