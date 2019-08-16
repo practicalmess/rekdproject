@@ -27,7 +27,7 @@ header {
     width: 20%;
     text-align: center;
     margin: 0 40%;
-    position: fixed;
+    position: absolute;
     height: 2em;
     border-radius: 5px;
     border: 2px solid #f4f4f4;
@@ -63,6 +63,19 @@ main {
   }
 }
 
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .wrapper {
+    height: 230px;
+    overflow: hidden;
+    margin-bottom: $column;
+    img {
+      margin-top: -30%;
+    }
+  }
+}
 
 
 
