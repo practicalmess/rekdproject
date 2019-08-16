@@ -1,0 +1,40 @@
+//Variables
+$bg-main: #fafafa;
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  height: 2em;
+  width: 100%;
+  margin: 2em 0;
+  img {
+    height: 2em;
+    width: auto;
+  }
+  input {
+    width: 20%;
+    margin: 0 40%;
+    position: fixed;
+    height: 2em;
+    border-radius: 5px;
+    border: 2px solid #f4f4f4;
+    background-color: #fafafa;
+  }
+}
+
+main {
+  background-color: $bg-main;
+  border-top: 1px solid #f4f4f4;
+}
+
+.profile {
+	display: flex;
+	img {
+		width: 100px;
+		height: 100px;
+	}
+}
