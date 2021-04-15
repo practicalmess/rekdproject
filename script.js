@@ -38,7 +38,8 @@ $('#following-count').empty().prepend(`${details.following}`);
 
 // Insert first 6 lines of 'about' property as bio
 for (let i=0; i<6; i++) {
-  $('#detail-list').append(`<li>${details.about[i]}</li>`);
+  const detailItem = details.about[i].slice(0, -3);
+  $('#detail-list').append(`<li>${detailItem}</li>`);
 }
 
 //Insert each picture in the gallery
